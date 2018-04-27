@@ -1,0 +1,49 @@
+.first{
+  background: url('../../img/bg/Fon.jpg') center center no-repeat; 
+  height: 650px;
+}
+
+.logo{
+  height: 70px;
+  
+}
+
+.nav__list__a{
+  color:#ffff;
+
+}
+
+.nav__title{
+  color:#ffff;
+  font-family: 'Ubuntu-medium';
+  font-weight: 500;
+  font-size: 13px;
+ 
+}
+
+.btm{
+  width: 100px;
+  height: 35px;
+  background-color: #e45028;
+ border-radius: 7px;
+ margin-bottom: 1.5px;
+
+}
+
+
+.btm__text__a{
+  font-family: 'Ubuntu-medium';
+  font-weight: 500;
+  font-size: 13px;
+  text-decoration: none;
+  color:#ffff;
+
+
+}
+
+.btm__text{
+  padding-top: 6.5px;
+  padding-left: 11.5px;
+}
+
+

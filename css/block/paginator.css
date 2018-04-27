@@ -1,0 +1,41 @@
+.disc{
+  width: 6px;
+	height: 6px;
+	background:#fff;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+ 
+  
+  
+}
+
+.paginator__list{
+  margin-bottom: 16px;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  position: relative;
+ 
+  
+}
+.paginator__list__activ{
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff ;
+  border-radius: 16px;
+  
+  
+}
+
+.paginator{
+position: fixed;
+right: 10%;
+
+}
+
+
