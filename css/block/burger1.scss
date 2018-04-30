@@ -2,9 +2,12 @@
 .first{
   background-image: url('../img/bg/hero_bg.png');
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: 50% center;
   background-size: cover;
   position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 650px;
 }
 
 
