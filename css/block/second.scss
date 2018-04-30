@@ -1,0 +1,23 @@
+.text1--second{
+  color: $dark;
+  padding: 0;
+  margin-bottom: rem(60px);
+}
+
+.second{
+background: url('../../img/bg/best-bg.png');
+background-repeat: no-repeat;
+background-position: 50%;
+background-size: cover;
+position: relative;
+
+
+}
+
+.second__container{
+  height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items:center;
+}
