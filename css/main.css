@@ -393,9 +393,14 @@ ul {
   .nav__link:hover {
     text-decoration: underline; }
 
-.disc {
-  content: "";
+.pag_a {
   width: 5px;
   height: 5px;
   border-radius: 2.5px;
   background-color: #fff; }
+
+.paginator__title {
+  display: block;
+  position: fixed;
+  top: 10%;
+  right: 10%; }

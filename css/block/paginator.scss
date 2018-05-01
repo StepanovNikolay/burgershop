@@ -1,4 +1,12 @@
-.disc{
-  content:"";
-  @include circle(5px, #fff)
+.pag_a{
+ @include circle(5px, #fff);
+ 
+  
+}
+
+.paginator__title{
+  display: block;
+ position: fixed;
+  top:10%;
+  right: 10%;
 }
