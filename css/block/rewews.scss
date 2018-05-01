@@ -1,6 +1,6 @@
 @each $rewews in(item--0, item--1, item--2, item--3, item--4, item--5, item--6, item--7){
   .rewews__#{$rewews}{
-    background: url('../../img/bg/#{$rewews}.jpg') center center /cover no-repeat;
+    background: url('../img/bg/#{$rewews}.jpg') center center /cover no-repeat;
   }
 }
 
