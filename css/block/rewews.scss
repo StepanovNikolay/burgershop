@@ -40,4 +40,47 @@ background-size: cover;
   font-family: 'Gagalin';
   font-size: 14px;
   color: #fff;
+  margin-top: 50px;
+  
+}
+
+
+.rewews__elem2{
+  font-weight: 300;
+  color: #fff;
+  margin-top: 35px;
+  line-height: 1.5;
+  width: rem(200px);
+  
+  font-size: 14px;
+}
+
+
+.rewews__btn{
+ min-width: 130px;
+height: 35px;
+color: #fff;
+text-decoration: none;
+text-transform: uppercase;
+background-color: #2f3234;
+border-radius: 5px;
+padding: rem(11px) rem(13px);
+font-size: 13px;
+
+}
+
+.rewews__elem3{
+  margin-top: rem(25px);
+}
+
+
+.rewews__drop{
+  opacity: 0;
+  transition: opaciti 0.5 sec;
+  margin-left: rem(22px);
+  
+  &:hover{
+    opacity: 1;
+    
+  }
 }

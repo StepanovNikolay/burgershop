@@ -1,0 +1,4 @@
+.disc{
+  content:"";
+  @include circle(5px, #fff)
+}

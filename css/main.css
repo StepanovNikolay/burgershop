@@ -309,7 +309,39 @@ ul {
 .rewews__elem1 {
   font-family: 'Gagalin';
   font-size: 14px;
-  color: #fff; }
+  color: #fff;
+  margin-top: 50px; }
+
+.rewews__elem2 {
+  font-weight: 300;
+  color: #fff;
+  margin-top: 35px;
+  line-height: 1.5;
+  width: 12.5rem;
+  font-size: 14px; }
+
+.rewews__btn {
+  min-width: 130px;
+  height: 35px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #2f3234;
+  border-radius: 5px;
+  padding: 0.6875rem 0.8125rem;
+  font-size: 13px; }
+
+.rewews__elem3 {
+  margin-top: 1.5625rem; }
+
+.rewews__drop {
+  opacity: 0;
+  -webkit-transition: opaciti 0.5 sec;
+  -o-transition: opaciti 0.5 sec;
+  transition: opaciti 0.5 sec;
+  margin-left: 1.375rem; }
+  .rewews__drop:hover {
+    opacity: 1; }
 
 .header {
   width: 100%;
@@ -360,3 +392,10 @@ ul {
   vertical-align: middle; }
   .nav__link:hover {
     text-decoration: underline; }
+
+.disc {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  background-color: #fff; }
