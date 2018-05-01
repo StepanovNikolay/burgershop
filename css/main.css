@@ -397,7 +397,10 @@ ul {
   width: 5px;
   height: 5px;
   border-radius: 2.5px;
-  background-color: #fff; }
+  background-color: #fff;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #fff; }
 
 .paginator__title {
   display: block;

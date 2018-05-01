@@ -1,5 +1,8 @@
 .pag_a{
  @include circle(5px, #fff);
+ display: block;
+ border-radius: 5px;
+ border: 1px solid #fff;
  
   
 }
