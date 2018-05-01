@@ -224,6 +224,7 @@ ul {
   text-align: center; }
 
 .second__container {
+  width: 100vh;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -252,12 +253,36 @@ ul {
   font-size: 14.01px;
   width: 300px; }
 
+.rewews__item--0 {
+  background: url("../../img/bg/item--0.jpg") center center/cover no-repeat; }
+
+.rewews__item--1 {
+  background: url("../../img/bg/item--1.jpg") center center/cover no-repeat; }
+
+.rewews__item--2 {
+  background: url("../../img/bg/item--2.jpg") center center/cover no-repeat; }
+
+.rewews__item--3 {
+  background: url("../../img/bg/item--3.jpg") center center/cover no-repeat; }
+
+.rewews__item--4 {
+  background: url("../../img/bg/item--4.jpg") center center/cover no-repeat; }
+
+.rewews__item--5 {
+  background: url("../../img/bg/item--5.jpg") center center/cover no-repeat; }
+
+.rewews__item--6 {
+  background: url("../../img/bg/item--6.jpg") center center/cover no-repeat; }
+
+.rewews__item--7 {
+  background: url("../../img/bg/item--7.jpg") center center/cover no-repeat; }
+
 .rewews__item {
-  background: url("../img/bg/Fon1.jpg") center center/cover no-repeat;
-  display: inline-block;
   vertical-align: top;
   width: calc(100% / 4);
-  height: calc(100% / 2); }
+  height: calc(100% / 2);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
 
 .rewews__container {
   padding-right: 0px;
@@ -266,6 +291,11 @@ ul {
   height: 100%; }
 
 .rewews__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
   height: 100%; }
 
@@ -276,26 +306,10 @@ ul {
   position: relative;
   background-size: cover; }
 
-.rewews__item--1 {
-  background: url("../img/bg/Fon2.jpg") center center/cover no-repeat; }
-
-.rewews__item--2 {
-  background: url("../img/bg/Fon3.jpg") center center/cover no-repeat; }
-
-.rewews__item--3 {
-  background: url("../img/bg/Fon4.jpg") center center/cover no-repeat; }
-
-.rewews__item--4 {
-  background: url("../img/bg/Fon5.jpg") center center/cover no-repeat; }
-
-.rewews__item--5 {
-  background: url("../img/bg/Fon6.jpg") center center/cover no-repeat; }
-
-.rewews__item--6 {
-  background: url("../img/bg/Fon7.jpg") center center/cover no-repeat; }
-
-.rewews__item--7 {
-  background: url("../img/bg/Fon8.jpg") center center/cover no-repeat; }
+.rewews__elem1 {
+  font-family: 'Gagalin';
+  font-size: 14px;
+  color: #fff; }
 
 .header {
   width: 100%;
