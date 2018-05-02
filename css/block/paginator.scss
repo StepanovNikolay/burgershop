@@ -1,15 +1,32 @@
 .pag_a{
- @include circle(5px, #fff);
+ @include circle(8px, #fff);
  display: block;
- border-radius: 5px;
- border: 1px solid #fff;
- 
+position: relative;
+top:50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
   
 }
 
 .paginator__title{
   display: block;
  position: fixed;
-  top:10%;
-  right: 10%;
+  top:12%;
+  right: 11%;
+}
+
+.paginator__list{
+  
+ margin-bottom: 15px;
+ border: 1px  ;
+  border-radius: 10px;
+  width: 16px;
+  height: 16px;
+  &:hover{
+    border: 1px solid #fff ;
+  }
+   
+ 
+  
 }

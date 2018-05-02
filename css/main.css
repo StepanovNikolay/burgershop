@@ -192,6 +192,11 @@ ul {
   font-weight: 400;
   line-height: 1; }
 
+.arrow {
+  position: absolute;
+  top: 86%;
+  left: 50%; }
+
 .text1--second {
   color: #2f3234;
   padding: 0;
@@ -394,16 +399,29 @@ ul {
     text-decoration: underline; }
 
 .pag_a {
-  width: 5px;
-  height: 5px;
-  border-radius: 2.5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
   background-color: #fff;
   display: block;
-  border-radius: 5px;
-  border: 1px solid #fff; }
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
 
 .paginator__title {
   display: block;
   position: fixed;
-  top: 10%;
-  right: 10%; }
+  top: 12%;
+  right: 11%; }
+
+.paginator__list {
+  margin-bottom: 15px;
+  border: 1px;
+  border-radius: 10px;
+  width: 16px;
+  height: 16px; }
+  .paginator__list:hover {
+    border: 1px solid #fff; }
