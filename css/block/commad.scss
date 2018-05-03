@@ -27,6 +27,16 @@ min-height: 650px;
   font-size: 14px;
   color: #fff;
   cursor: pointer;
+  &:before{
+    vertical-align: middle;
+    content: "";
+    width: 0; height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid $yellow;
+    margin: 12px;
+    padding-top: 10px;
+  }
    &:hover {
      color:$yellow;
      
@@ -40,7 +50,7 @@ min-height: 650px;
 
 .img_com{
   width:rem(108px);
-  height:6.55rem;
+  height:rem(108px);
   border-radius: 50%;
   
 }

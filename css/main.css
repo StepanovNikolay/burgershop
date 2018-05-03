@@ -454,6 +454,16 @@ ul {
   font-size: 14px;
   color: #fff;
   cursor: pointer; }
+  .com__text:before {
+    vertical-align: middle;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #f8b43a;
+    margin: 12px;
+    padding-top: 10px; }
   .com__text:hover {
     color: #f8b43a; }
 
@@ -462,7 +472,7 @@ ul {
 
 .img_com {
   width: 6.75rem;
-  height: 6.55rem;
+  height: 6.75rem;
   border-radius: 50%; }
 
 .comm__work {
