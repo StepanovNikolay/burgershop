@@ -431,7 +431,7 @@ ul {
     border: 1px solid #fff; }
 
 .command {
-  background: url("../../img/bg/Rectangle 2.jpg");
+  background: url("../img/bg/Rectangle 2.jpg");
   background-repeat: no-repeat;
   background-position: 50% center;
   background-size: cover;
@@ -441,7 +441,7 @@ ul {
   min-height: 650px; }
 
 .command__menu {
-  background: url("../../img/bg/Rectangle 1.png");
+  background: url("../img/bg/Rectangle 1.png");
   position: absolute;
   width: 50%;
   height: 100%;
