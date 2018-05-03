@@ -9,6 +9,10 @@
   width: calc(100% / 4);
   height: calc(100% / 2);
   filter: grayscale(100%);
+  cursor: pointer;
+  &:hover .rewews__drop{
+    opacity: 1;
+  }
 }
 
 
@@ -66,6 +70,9 @@ background-color: #2f3234;
 border-radius: 5px;
 padding: rem(11px) rem(13px);
 font-size: 13px;
+&:hover {
+  color: darken($color: #2f3234, $amount: 10%);
+}
 
 }
 
@@ -79,8 +86,5 @@ font-size: 13px;
   transition: opaciti 0.5 sec;
   margin-left: rem(22px);
   
-  &:hover{
-    opacity: 1;
-    
-  }
+ 
 }

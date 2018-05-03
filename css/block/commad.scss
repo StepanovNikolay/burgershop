@@ -1,0 +1,77 @@
+.command{
+  background:  url('../../img/bg/Rectangle 2.jpg') ;
+  background-repeat: no-repeat;
+background-position: 50% center;
+background-size: cover;
+position: relative;
+width: 100%;
+height: 100vh;
+min-height: 650px;
+}
+
+
+.command__menu{
+  background: url('../../img/bg/Rectangle 1.png');
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left:  50%;
+  padding-left:rem( 97px);
+  padding-top: rem(22px);
+}
+
+
+
+.com__text{
+  font-family: 'Gagalin';
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+   &:hover {
+     color:$yellow;
+     
+   }
+}
+
+.comm__name:hover .comm__content{
+  height:rem(110px);
+}
+
+
+.img_com{
+  width:rem(108px);
+  height:6.55rem;
+  border-radius: 50%;
+  
+}
+
+.comm__work{
+  color:#fff;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: rem(10px);
+  
+}
+
+.com__text2{
+  color:#fff;
+  font-size: 14px;
+  font-weight: 300;
+  width: rem(200px);
+  
+}
+
+.comm__content{
+  display: flex;
+  overflow: hidden;
+  height:0 ;
+  z-index: 10;
+  transition: 0.5s;
+
+
+}
+
+.comm__img{
+  margin-right:2%;
+}
+

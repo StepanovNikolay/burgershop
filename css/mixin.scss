@@ -13,4 +13,8 @@ background-color: $color;
 
 
 
-
+@mixin tringle ($color, $direction ){
+width: 0;
+height: 0;  
+border:  solid transparent;
+}
