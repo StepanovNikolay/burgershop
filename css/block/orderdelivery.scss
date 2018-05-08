@@ -1,0 +1,95 @@
+.orderdelivery{
+  background-image: url('../../img/bg/Rectangle 6.jpg');
+    background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 50% center;
+  width: 100%;
+  height: 100vh;
+  min-height: 650px;
+  color: #fff;
+
+}
+
+.form{
+  display: flex;
+}
+
+.row__textarea{
+  height: 28%;
+   border: none;
+  border-radius: 5px;
+  padding: 8px 20px;
+  width: 100%;
+  border-color: #f9b43b;
+  outline: none;
+  &:focus{
+    border:solid #f9b43b;
+  }
+}
+
+
+.form__textarea{
+  width: 100%;
+}
+
+
+
+.form__input{
+  border: none;
+  border-radius: 5px;
+  padding: 8px 20px;
+  width: 100%;
+  border-color: #f9b43b;
+  outline: none;
+  &:focus{
+    border:solid #f9b43b;
+  }
+ 
+}
+
+
+.form__row{
+  display: flex;
+  width: 100%;
+}
+
+.form__block{
+  flex-grow: 1;
+  margin-right: 20px;
+  &:last-child{
+    margin-right: none;
+  }
+}
+
+
+.new__link{
+  text-decoration: none;
+  color: #fff;
+  margin-left: rem(15px);
+}
+
+.form__block4{
+  display: block;
+}
+
+.form__radio{
+  margin-top: rem(15px);
+  margin-bottom: rem(20px);
+}
+
+
+.radio__form{
+  margin-right: rem(10px);
+  
+}
+
+.radio__text{
+  margin-right: rem(15px);
+}
+
+.radio__formborder{
+  margin-right: rem(10px);
+  margin-bottom: rem(15px);
+}
+
