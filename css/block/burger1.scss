@@ -7,7 +7,7 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  min-height: 650px;
+  min-height:rem(650px);
 }
 
 
@@ -24,19 +24,36 @@ align-items:center;
 .burger__main{
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  
   flex-grow:1;
   align-items: center;
   padding-bottom: 15%;
+  @include tablets{
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20% 10%;
+    
+    
+  }
+}
+
+.burger__img{
+  width: 100%;
+  height: 100%;
 }
 
 
-.burger, .burger__text{
+.burger{
   flex-basis: 50%;
   display: flex;
+  @include tablets{
+    align-items: flex-end;
+  }
 
 }
 .burger__text{
+  flex-basis: 50%;
+  display: flex;
   flex-direction: column;
   justify-content: center;
 }
@@ -49,7 +66,7 @@ align-items:center;
   font-weight: 300;
   line-height: 1.42;
   margin: 0;
-  padding-top: 60px;
+  padding-top:rem(60px);
 }
 
 .text2{
@@ -66,4 +83,7 @@ align-items:center;
   position: absolute;
   top: 86%;
   left: 50%;
+  @include tablets{
+    display: none;
+  }
 }

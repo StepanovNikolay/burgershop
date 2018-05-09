@@ -14,15 +14,23 @@ transform: translate(-50%, -50%);
  position: fixed;
   top:12%;
   right: 11%;
+  @include tablets{
+    display: none;
+  }
+
+  @include phones{
+    display: none;
+  }
+
 }
 
 .paginator__list{
   
- margin-bottom: 15px;
+ margin-bottom: rem(15px);
  border: 1px  ;
-  border-radius: 10px;
-  width: 16px;
-  height: 16px;
+  border-radius: rem(10px);
+  width: rem(16px);
+  height: rem(16px);
   &:hover{
     border: 1px solid #fff ;
   }

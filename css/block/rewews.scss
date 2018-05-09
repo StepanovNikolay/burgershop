@@ -13,6 +13,11 @@
   &:hover .rewews__drop{
     opacity: 1;
   }
+@include tablets{
+  width: calc(100% / 2);
+  height: calc(100% / 4);
+}
+
 }
 
 
@@ -34,7 +39,7 @@ height: 100%;
 .rewews{
   width: 100%;
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
 position: relative;
 background-size: cover;
 }
@@ -42,9 +47,15 @@ background-size: cover;
 
 .rewews__elem1{
   font-family: 'Gagalin';
-  font-size: 14px;
+  font-size: rem(14px);
   color: #fff;
-  margin-top: 50px;
+  margin-top: rem(50px);
+  width: 100%;
+  height: 100%;
+
+  @include tablets{
+    margin-top: 0;
+  }
   
 }
 
@@ -52,22 +63,27 @@ background-size: cover;
 .rewews__elem2{
   font-weight: 300;
   color: #fff;
-  margin-top: 35px;
+  margin-top: rem(35px);
   line-height: 1.5;
   width: rem(200px);
-  
-  font-size: 14px;
+  font-size: rem(14px);
+  width: 100%;
+  height: 100%;
+
+  @include tablets{
+    margin-top: 1.1875rem;
+  }
 }
 
 
 .rewews__btn{
- min-width: 130px;
-height: 35px;
+ min-width: rem(130px);
+height: rem(35px);
 color: #fff;
 text-decoration: none;
 text-transform: uppercase;
 background-color: #2f3234;
-border-radius: 5px;
+border-radius: rem(5px);
 padding: rem(11px) rem(13px);
 font-size: 13px;
 &:hover {
@@ -78,6 +94,8 @@ font-size: 13px;
 
 .rewews__elem3{
   margin-top: rem(25px);
+  width: 100%;
+  height: 100%;
 }
 
 

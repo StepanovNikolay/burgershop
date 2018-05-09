@@ -12,9 +12,15 @@ background-color: $color;
 }
 
 
+@mixin phones{
+  @media screen and(max-width:$phones) {
+    @content;
+  }
+}
 
-@mixin tringle ($color, $direction ){
-width: 0;
-height: 0;  
-border:  solid transparent;
+
+@mixin tablets{
+  @media screen and(max-width:$tablets) {
+    @content;
+  }
 }

@@ -13,24 +13,31 @@ background-size: cover;
 position: relative;
 width: 100%;
 height: 100vh;
-min-height: 650px;
+min-height: rem(650px);
 
 }
 .second__item{
-  margin-right: 50px;
+  margin-right: rem(50px);
+  width: 100%;
 }
 
 .second__list{
-  margin-bottom: 160px;
+  margin-bottom: rem(160px);
+  width: 100%;
 }
 
 .sec__img{
-  margin-bottom: 50px;
+  margin-bottom: rem(50px);
+  
 }
+
+
+
 
 .second__title{
   display: flex;
   text-align: center;
+  width: 100%;
  
 }
 
@@ -48,14 +55,14 @@ align-items:center;
   font-family: 'Lifehack';
   font-weight: normal;
   font-size:24.12px;
-  width: 215px;
+  width: 100%;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
 
 }
 
 .sec__text2{
   font-weight: 300;
   font-size: 14.01px;
-  width: 300px;
+  width: 100%;
 }
