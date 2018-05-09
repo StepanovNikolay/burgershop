@@ -502,7 +502,7 @@ ul {
   margin-right: 2%; }
 
 .menu_section {
-  background-image: url("../../img/bg/big-burger.jpg");
+  background-image: url("../img/bg/big-burger.jpg");
   background-position: 50% center;
   background-repeat: no-repeat;
   position: relative;
@@ -536,13 +536,13 @@ ul {
   right: 44%; }
 
 .fon__burger--2 {
-  background: url("../../img/bg/burger--2.jpg") center center/cover no-repeat; }
+  background: url("../img/bg/burger--2.jpg") center center/cover no-repeat; }
 
 .fon__burger--3 {
-  background: url("../../img/bg/burger--3.jpg") center center/cover no-repeat; }
+  background: url("../img/bg/burger--3.jpg") center center/cover no-repeat; }
 
 .fon__burger--4 {
-  background: url("../../img/bg/burger--4.jpg") center center/cover no-repeat; }
+  background: url("../img/bg/burger--4.jpg") center center/cover no-repeat; }
 
 .fon__burger {
   height: 100%;
