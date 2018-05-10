@@ -21,6 +21,13 @@
 }
 
 
+.rewews__drop{
+  @include phones{
+    margin: 9% 0 0 14%;
+  }
+}
+
+
 .rewews__container{
 padding-right: 0px;
 padding-left: 0px;
@@ -56,7 +63,13 @@ background-size: cover;
   @include tablets{
     margin-top: 0;
   }
+
   
+  @include phones{
+    font-size: rem(24px);
+    width: 80%;
+    text-align: center;
+  }
 }
 
 
@@ -72,6 +85,10 @@ background-size: cover;
 
   @include tablets{
     margin-top: 1.1875rem;
+  }
+
+  @include phones{
+    display:none;
   }
 }
 
@@ -96,6 +113,10 @@ font-size: 13px;
   margin-top: rem(25px);
   width: 100%;
   height: 100%;
+  
+  @include phones{
+   margin-left: 12%;
+  }
 }
 
 

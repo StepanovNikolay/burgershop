@@ -84,6 +84,7 @@ align-items:center;
   top: 86%;
   left: 50%;
   @include tablets{
-    display: none;
+    top: 91%;
+    left: 46%;
   }
 }

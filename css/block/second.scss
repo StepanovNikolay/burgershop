@@ -8,7 +8,7 @@
 .second{
 background: url('../img/bg/best-bg.png');
 background-repeat: no-repeat;
-background-position: 50% center;
+background-position: 100% center;
 background-size: cover;
 position: relative;
 width: 100%;
@@ -19,6 +19,9 @@ min-height: rem(650px);
 .second__item{
   margin-right: rem(50px);
   width: 100%;
+  @include phones{
+    display:flex;
+  }
 }
 
 .second__list{
@@ -28,6 +31,9 @@ min-height: rem(650px);
 
 .sec__img{
   margin-bottom: rem(50px);
+  @include phones {
+    margin-right: 5%;
+  }
   
 }
 
@@ -38,6 +44,10 @@ min-height: rem(650px);
   display: flex;
   text-align: center;
   width: 100%;
+  @include phones {
+    flex-direction: column;
+    text-align: left;
+  }
  
 }
 
