@@ -7,55 +7,93 @@ background-size:cover;
 width: 100%;
 height: 100vh;
 min-height: rem(650px);
-display: flex;
-justify-content: flex-end;
+
 
 }
 
 .text1__menu{
   color: #fff;
-  position: absolute;
   left: rem(100px);
+  position: absolute;
 }
 
 .menu__text{
   font-family: 'Gagalin';
   font-size:rem(40px);
   color: #fff;
- margin: 0 auto;
- transform: rotate(270deg);
- white-space: nowrap;
-position: relative;
-bottom: 22%;
-right: 44%; 
+  transform: rotate(-90deg) translateY(-50%);
+  position: relative;
+  top: 78%;
+  left: 30%;
+  white-space: nowrap;
+  z-index: 1;
+  margin: 0 auto;
 }
 
+
 @each $burger in (burger--2, burger--3, burger--4){
-  .fon__#{$burger}{
+  .menu__#{$burger}{
     background:url('../img/bg/#{$burger}.jpg') center center /cover no-repeat;
+    
   
   }
  
+}
+
+
+.menu__burger{
+  float: left;
+  width: rem(80px);
+  height: 100%;
+  display: block;
+  position: relative;
 }
  
 
 
 .fon__burger{
 height: 100%;
-display: flex;
-align-items: flex-end;
-width: 10%;
-transition: 0.3s;
-&:hover {
-  flex-grow: 3;
+
+&:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+
 }
 
+}
+
+.fon__burger--active{
+  width: rem(550px);
 
 
 }
 
 .menu__list{
-  display: flex;
- flex-direction: row-reverse;
- width: 100%;
+position: absolute;
+display: flex;
+top: 0; 
+right: 0;
+bottom: 0;
+}
+.menu__text1{
+  width: rem(0px);
+  height: 0;
+  color: #fff;
+  z-index: 1;
+  position: relative;
+  display: none;
+}
+
+.menu__text1--active{
+  width: rem(500px);
+  height: 100%;
+  display: block;
+
 }

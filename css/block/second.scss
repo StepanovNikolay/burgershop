@@ -21,6 +21,7 @@ min-height: rem(650px);
   width: 100%;
   @include phones{
     display:flex;
+    margin-bottom: 5%;
   }
 }
 
@@ -30,11 +31,17 @@ min-height: rem(650px);
 }
 
 .sec__img{
+
   margin-bottom: rem(50px);
   @include phones {
     margin-right: 5%;
   }
   
+}
+
+.img__two{
+  width: rem(80px);
+  height: rem(80px);
 }
 
 

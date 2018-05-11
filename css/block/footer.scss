@@ -3,5 +3,47 @@
   background: #131313;
   height: rem(40px);
   width: 100%;
-  position: absolute;
+  position: relative;
+  top: 94%;
+  display: flex;
+}
+
+
+.footer__text1{
+  font-weight: 300;
+  font-size: rem(14px);
+  color: #fff;
+  
+}
+
+.footer__tel{
+  text-decoration: none;
+  color: #e45028;
+  font-size:rem(14px) ;
+  font-weight: 700;
+  &:before{
+    content: "";
+    background: url('../../img/logo/phone.svg') center center /cover no-repeat;
+    display: inline-block;
+     width: rem(14px);
+     height: rem(14px);
+
+  }
+}
+
+@each $social in(vk, fb, inst, twitter){
+  .footer__link--#{$social}{
+    background: url('../../img/logo/#{$social}.svg') center center /cover no-repeat;
+   
+  }
+}
+
+.footer__link{
+  width: rem(30px);
+  height: rem(20px);
+  
+}
+
+.footer__item{
+  margin-right: 3%;
 }
