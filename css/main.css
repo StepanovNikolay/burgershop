@@ -880,7 +880,7 @@ ul {
   min-height: 40.625rem; }
 
 .footer {
-  background: url("../../img/bg/footer bg.jpg") center center/cover no-repeat;
+  background: url("../img/bg/footer bg.jpg") center center/cover no-repeat;
   height: 2.5rem;
   width: 100%;
   position: relative;
@@ -926,22 +926,22 @@ ul {
   font-weight: 700; }
   .footer__tel:before {
     content: "";
-    background: url("../../img/logo/phone.svg") center center/cover no-repeat;
+    background: url("../img/logo/phone.svg") center center/cover no-repeat;
     display: inline-block;
     width: 0.875rem;
     height: 0.875rem; }
 
 .footer__link--vk {
-  background: url("../../img/logo/vk.svg") center center/cover no-repeat; }
+  background: url("../img/logo/vk.svg") center center/cover no-repeat; }
 
 .footer__link--fb {
-  background: url("../../img/logo/fb.svg") center center/cover no-repeat; }
+  background: url("../img/logo/fb.svg") center center/cover no-repeat; }
 
 .footer__link--inst {
-  background: url("../../img/logo/inst.svg") center center/cover no-repeat; }
+  background: url("../img/logo/inst.svg") center center/cover no-repeat; }
 
 .footer__link--twitter {
-  background: url("../../img/logo/twitter.svg") center center/cover no-repeat; }
+  background: url("../img/logo/twitter.svg") center center/cover no-repeat; }
 
 .footer__social {
   width: 28%; }

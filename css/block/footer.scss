@@ -1,6 +1,6 @@
 .footer{
   
-  background: url('../../img/bg/footer\ bg.jpg') center center / cover no-repeat;
+  background: url('../img/bg/footer\ bg.jpg') center center / cover no-repeat;
   height: rem(40px);
   width: 100%;
   position: relative;
@@ -45,7 +45,7 @@
   font-weight: 700;
   &:before{
     content: "";
-    background: url('../../img/logo/phone.svg') center center /cover no-repeat;
+    background: url('../img/logo/phone.svg') center center /cover no-repeat;
     display: inline-block;
      width: rem(14px);
      height: rem(14px);
@@ -55,7 +55,7 @@
 
 @each $social in(vk, fb, inst, twitter){
   .footer__link--#{$social}{
-    background: url('../../img/logo/#{$social}.svg') center center /cover no-repeat;
+    background: url('../img/logo/#{$social}.svg') center center /cover no-repeat;
    
   }
 }
