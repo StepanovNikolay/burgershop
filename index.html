@@ -8,7 +8,8 @@
   <title>Document</title>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/main.css">
-
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+  </script>
 </head>
 
 <body>
@@ -108,7 +109,279 @@
         <!--container second-->
       </section>
       <!--second-->
+      <section class="byburger">
+        <div class="container byburger_container">
 
+          <div class="slider">
+            <ul class="slider__list">
+              <li class="slider__elem">
+                <div class="component">
+                  <div class="component__btn">
+                    <div class="component__icon icon-burger"></div>
+                    <div class="component__text">состав</div>
+                  </div>
+                  <div class="component__drop">
+                    <table class="component__table">
+                      <tr>
+                        <td class="component__icon ">
+                          <i class="icon-beef"></i>
+                        </td>
+                        <td class="component__name">Говядина</td>
+                        <td class="component__weight">300гр</td>
+                      </tr>
+                    </table>
+                    <table class="component__table">
+                      <tr>
+                        <td class="component__icon">
+                          <i class="icon-beef"></i>
+                        </td>
+                        <td class="component__name">булочки</td>
+                        <td class="component__weight">100гр</td>
+                      </tr>
+                    </table>
+                    <table class="component__table">
+                      <tr>
+                        <td class="component__icon">
+                          <i class="icon-salad"></i>
+                        </td>
+                        <td class="component__name">зелень</td>
+                        <td class="component__weight">70гр</td>
+                      </tr>
+                    </table>
+                    <table class="component__table">
+                      <tr>
+                        <td class="component__icon">
+                          <i class="icon-sauce"></i>
+                        </td>
+                        <td class="component__name">соус</td>
+                        <td class="component__weight">150гр</td>
+                      </tr>
+                    </table>
+                    <table class="component__table">
+                      <tr>
+                        <td class="component__icon">
+                          <i class="icon-cucumber"></i>
+                        </td>
+                        <td class="component__name">овощи</td>
+                        <td class="component__weight">200гр</td>
+                      </tr>
+                    </table>
+                    <table class="component__table">
+                      <tr>
+                        <td class="component__icon">
+                          <i class="icon-cheese"></i>
+                        </td>
+                        <td class="component__name">сыр</td>
+                        <td class="component__weight">80гр</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="component__kkal">
+                  <div class="component__icon icon-kkal">
+                    <div class="component__numeral">1200</div>
+                  </div>
+                  <div class="component__text component__text--left">ккал</div>
+                </div>
+                <div class="slider__col">
+                  <div class="slider__img" style="background-image:url(./img/burger/blackburger.png)"></div>
+                </div>
+                <div class="slider__col">
+                  <h2 class="text1 text1__slider">Dark BEEF Burger</h2>
+                  <div class="slider__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь,
+                    двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+                  <div class="slider__info">
+                    <div class="slider__price">500
+                      <span class="slider__price--small">рублей</span>
+                    </div>
+                    <div class="slider__btm">
+                      <a href="#" class="order-link"> Заказать</a>
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider__elem">
+                <div class="component">
+                  <div class="component__btn">
+                    <div class="component__icon icon-burger"></div>
+                    <div class="component__text">состав</div>
+                  </div>
+                  <div class="component__drop">
+                    <table class="component__table">
+                      <tr>
+                        <td class="component__icon ">
+                          <i class="icon-beef"></i>
+                        </td>
+                        <td class="component__name">Говядина</td>
+                        <td class="component__weight">300гр</td>
+                      </tr>
+                    </table>
+                    <table class="component__table">
+                      <tr>
+                        <td class="component__icon">
+                          <i class="icon-beef"></i>
+                        </td>
+                        <td class="component__name">булочки</td>
+                        <td class="component__weight">100гр</td>
+                      </tr>
+                    </table>
+                    <table class="component__table">
+                      <tr>
+                        <td class="component__icon">
+                          <i class="icon-salad"></i>
+                        </td>
+                        <td class="component__name">зелень</td>
+                        <td class="component__weight">70гр</td>
+                      </tr>
+                    </table>
+                    <table class="component__table">
+                      <tr>
+                        <td class="component__icon">
+                          <i class="icon-sauce"></i>
+                        </td>
+                        <td class="component__name">соус</td>
+                        <td class="component__weight">150гр</td>
+                      </tr>
+                    </table>
+                    <table class="component__table">
+                      <tr>
+                        <td class="component__icon">
+                          <i class="icon-cucumber"></i>
+                        </td>
+                        <td class="component__name">овощи</td>
+                        <td class="component__weight">200гр</td>
+                      </tr>
+                    </table>
+                    <table class="component__table">
+                      <tr>
+                        <td class="component__icon">
+                          <i class="icon-cheese"></i>
+                        </td>
+                        <td class="component__name">сыр</td>
+                        <td class="component__weight">80гр</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="component__kkal">
+                  <div class="component__icon icon-kkal">
+                    <div class="component__numeral">1200</div>
+                  </div>
+                  <div class="component__text component__text--left">ккал</div>
+                </div>
+                <div class="slider__col">
+                  <div class="slider__img" style="background-image:url(./img/burger/blackburger.png)"></div>
+                </div>
+                <div class="slider__col">
+                  <h2 class="text1 text1__slider">Dark BEEF Burger</h2>
+                  <div class="slider__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь,
+                    двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+                  <div class="slider__info">
+                    <div class="slider__price">1000
+                      <span class="slider__price--small">рублей</span>
+                    </div>
+                    <div class="slider__btm">
+                      <a href="#" class="order-link"> Заказать</a>
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+              <li class="slider__elem">
+                <div class="component">
+                  <div class="component__btn">
+                    <div class="component__icon icon-burger"></div>
+                    <div class="component__text">состав</div>
+                  </div>
+                  <div class="component__drop">
+                    <table class="component__table">
+                      <tr>
+                        <td class="component__icon ">
+                          <i class="icon-beef"></i>
+                        </td>
+                        <td class="component__name">Говядина</td>
+                        <td class="component__weight">300гр</td>
+                      </tr>
+                    </table>
+                    <table class="component__table">
+                      <tr>
+                        <td class="component__icon">
+                          <i class="icon-beef"></i>
+                        </td>
+                        <td class="component__name">булочки</td>
+                        <td class="component__weight">100гр</td>
+                      </tr>
+                    </table>
+                    <table class="component__table">
+                      <tr>
+                        <td class="component__icon">
+                          <i class="icon-salad"></i>
+                        </td>
+                        <td class="component__name">зелень</td>
+                        <td class="component__weight">70гр</td>
+                      </tr>
+                    </table>
+                    <table class="component__table">
+                      <tr>
+                        <td class="component__icon">
+                          <i class="icon-sauce"></i>
+                        </td>
+                        <td class="component__name">соус</td>
+                        <td class="component__weight">150гр</td>
+                      </tr>
+                    </table>
+                    <table class="component__table">
+                      <tr>
+                        <td class="component__icon">
+                          <i class="icon-cucumber"></i>
+                        </td>
+                        <td class="component__name">овощи</td>
+                        <td class="component__weight">200гр</td>
+                      </tr>
+                    </table>
+                    <table class="component__table">
+                      <tr>
+                        <td class="component__icon">
+                          <i class="icon-cheese"></i>
+                        </td>
+                        <td class="component__name">сыр</td>
+                        <td class="component__weight">80гр</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="component__kkal">
+                  <div class="component__icon icon-kkal">
+                    <div class="component__numeral">1200</div>
+                  </div>
+                  <div class="component__text component__text--left">ккал</div>
+                </div>
+                <div class="slider__col">
+                  <div class="slider__img" style="background-image:url(./img/burger/blackburger.png)"></div>
+                </div>
+                <div class="slider__col">
+                  <h2 class="text1 text1__slider">Dark BEEF Burger</h2>
+                  <div class="slider__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь,
+                    двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+                  <div class="slider__info">
+                    <div class="slider__price">800
+                      <span class="slider__price--small">рублей</span>
+                    </div>
+                    <div class="slider__btm">
+                      <a href="#" class="order-link"> Заказать</a>
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+      </section>
       <section class="command">
         <div class="command__menu">
           <div class="comand__bar">
@@ -340,20 +613,20 @@
               </label>
               <div class="form__radio">
                 <label for="" class="form__btm">
-                  <input type="radio" class="radio__chek"  name="payment" type="radio" checked>
+                  <input type="radio" class="radio__chek" name="payment" type="radio" checked>
                   <div class="radio__fake"></div>
                   <div class="radio__text"> Потребуется сдача</div>
-                  </label>
+                </label>
                 <label for="" class="form__btm">
                   <input type="radio" class="radio__chek" name="payment" type="radio">
                   <div class="radio__fake"></div>
-                   <div class="radio__text">Оплата по карте</div>
-                   </label>
+                  <div class="radio__text">Оплата по карте</div>
+                </label>
                 <label class="form__btm form__btm--checkbox">
                   <input type="radio" class="radio__chek" type="checkbox">
                   <div class="radio__fake radio__fake--border"></div>
                   <div class="radio__text">Не перезванивать</div>
-                  </label>
+                </label>
               </div>
               <div class="btm">
                 <a href="#" class="order-link"> Заказать</a>
@@ -366,6 +639,7 @@
       </section>
       <!--закажи доставку-->
       <section class="section map__section ">
+        <div class="map" id="map" ></div>
         <footer class="footer">
           <div class="footer__text">
             <div class="footer__text1">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
@@ -422,5 +696,9 @@
   </ul>
 
 </body>
+<script src="./jquery/jQuery v3.3.1.js"></script>
+<script src="./jquery/slick.js"></script>
+<script src="./jquery/map.js"></script>
+<script src="./jquery/script.js"></script>
 
 </html>

@@ -186,11 +186,3 @@ white-space: nowrap;
 }
 
 
-.radio__chek:checked {
-  &+.radio__fake {
-    &:after {
-      width: rem(8px);
-      height: rem(8px);
-    }
-  }
-}

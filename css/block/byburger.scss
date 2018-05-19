@@ -1,0 +1,183 @@
+.byburger{
+  background: url('../img/bg/Rectangle\ byburger.jpg');
+  background-position: 100% center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: rem(650px);
+
+}
+
+.byburger_container{
+  height: 100%;
+  
+}
+
+.slider{
+  width: 100%;
+  height: 50%;
+
+}
+
+.slider__col{
+  width: 50%;
+  
+}
+
+
+
+.slider__img{
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  width: 100%;
+  height: 100%;
+}
+
+
+.slider__list{
+  height: 100%;
+ 
+}
+
+.text1__slider{
+  color: #fff;
+  font-size: 72px;
+  line-height: 0.9;
+  padding-top: 0;
+  margin-bottom: 4%;
+}
+
+.slider__text{
+  font-family: 'Ubuntu';
+  color:#fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+
+.slider__price{
+  font-size: 72px;
+  font-family: 'Gagalin';
+  color:#e35028;
+
+ 
+}
+
+.slider__price--small{
+  font-size: 30px;
+}
+
+.slider__elem{
+  display: flex !important;
+   width: 100%;
+   height: 100%;
+   
+}
+
+.slider__info{
+  display: flex;
+  align-items: center;
+}
+
+.slider__btm{
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.component{
+  width: rem(90px);
+  position: relative;
+  display: flex;
+  cursor: pointer;
+
+
+  &__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: rem(90px);
+    height: rem(90px);
+    border-radius: 8px;
+    background-color: #f08c33;
+    opacity: 0.8;
+
+
+    
+     &:hover{
+       background-color: #e35028;
+     } 
+
+    &:hover +.component__drop  {
+      opacity: 1;
+      top: 0;
+      
+    }
+    
+  }
+
+ &__icon{
+ font-size: rem(40px);
+
+ }
+  
+ &__text{
+   color: #fff;
+   font-family: 'Gagalin';
+   font-size: rem(14px);
+ }
+}
+
+.component__text--left{
+  margin-left: 15%;
+}
+
+.component__kkal{
+  position: absolute;
+  margin-left: rem(21px);
+  bottom: 10%;
+
+
+
+}
+
+.component__numeral{
+  position: absolute;
+  top: 33%;
+  left: 20%;
+  font-family: 'Gagalin';
+  font-size:rem(15px);
+  color:#fff;
+}
+
+
+.component__drop{
+  width: rem(270px);
+  height: rem(330px);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  left: rem(91px);
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+  opacity: 0;
+  top:-10000px;
+  z-index: 1000;
+
+}
+
+
+.component__table{
+  display: flex;
+  justify-content: center;
+  justify-content: flex-start;
+
+  
+}
+
+
+

@@ -65,13 +65,19 @@
 }
 
 .footer__link{
-  width: rem(25px);
+  width: rem(20px);
   height: rem(20px);
   filter: contrast(0%);
+
   &:hover{
     filter: contrast(100%);
   }
   
+}
+
+
+.footer__link--vk{
+  height: rem(13px);
 }
 
 
@@ -81,6 +87,9 @@
 .footer__item{
   display: flex;
   margin-right: 3%;
+  &:first-child{
+    align-items: center;
+  }
   @include tablets {
     margin-right: 8%;
   }
