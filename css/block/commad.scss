@@ -51,7 +51,7 @@ min-height:rem(650px);
     margin: rem(12px);
     padding-top:rem(10px);
   }
-   &:hover {
+   &.com__text--activ {
      color:$yellow;
      
    }
@@ -64,13 +64,17 @@ min-height:rem(650px);
    
 }
 
-.comm__name:hover .comm__content{
-  height:rem(110px);
+
+
+
+.comm__content--activ{
+  height: 100px;
   @include tablets{
     height: 100%;
   }
 
 }
+
 
 
 .img_com{
@@ -106,6 +110,9 @@ min-height:rem(650px);
   overflow: hidden;
   height:0 ;
   transition: 0.5s;
+  &:active{
+    height: 100px;
+  }
   @include tablets{
     flex-direction: column;
     padding-left: 7%;

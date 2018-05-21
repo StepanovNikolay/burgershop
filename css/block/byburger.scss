@@ -17,11 +17,18 @@
 .slider{
   width: 100%;
   height: 50%;
+  @include tablets{
+    height: 100%;
+  }
 
 }
 
 .slider__col{
   width: 50%;
+  
+}
+
+.text1__slider{
   
 }
 
@@ -33,12 +40,17 @@
   background-position: center;
   background-size: 100% auto;
   width: 100%;
-  height: 100%;
+  height: rem(300px);
 }
 
 
 .slider__list{
   height: 100%;
+  display: flex;
+ @include tablets{
+   align-items: center;
+
+ }
  
 }
 
@@ -48,6 +60,15 @@
   line-height: 0.9;
   padding-top: 0;
   margin-bottom: 4%;
+  @include tablets{
+    text-align: center;
+  }
+
+  @include phones{
+    font-size: 50px;
+    width: 18rem;
+  }
+
 }
 
 .slider__text{
@@ -55,6 +76,14 @@
   color:#fff;
   font-size: 14px;
   font-weight: 300;
+
+@include tablets{
+  text-align: center;
+  
+}
+
+
+
 }
 
 
@@ -62,18 +91,32 @@
   font-size: 72px;
   font-family: 'Gagalin';
   color:#e35028;
-
+@include phones {
+  display: flex;
+  align-items: center;
+}
  
 }
 
 .slider__price--small{
   font-size: 30px;
+
+  @include phones {
+    margin-left: 2%;
+  }
+
 }
 
 .slider__elem{
+   position: relative;
   display: flex !important;
    width: 100%;
    height: 100%;
+   @include tablets{
+     flex-direction: column;
+     align-items: center;
+   }
+
    
 }
 
@@ -85,13 +128,25 @@
 .slider__btm{
   margin-left: 5%;
   margin-top: 5%;
+
+  @include phones{
+    margin-left: 9%;
+  }
+
 }
 
 .component{
   width: rem(90px);
-  position: relative;
+  position: absolute;
   display: flex;
   cursor: pointer;
+  @include tablets{
+    left: 26%;
+  }
+
+  @include phones{
+    left: 5%;
+  }
 
 
   &__btn{
@@ -111,7 +166,7 @@
        background-color: #e35028;
      } 
 
-    &:hover +.component__drop  {
+     &:hover +.component__drop  {
       opacity: 1;
       top: 0;
       
@@ -139,7 +194,15 @@
   position: absolute;
   margin-left: rem(21px);
   bottom: 10%;
+  @include tablets{
+    bottom: 89%;
+    right: 32%;
+  }
 
+  @include phones{
+    
+    right: 5%;
+  }
 
 
 }

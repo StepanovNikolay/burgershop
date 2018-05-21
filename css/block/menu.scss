@@ -54,18 +54,7 @@ min-height: rem(650px);
 .fon__burger{
 height: 100%;
 
-&:after{
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.5);
 
-}
 
 }
 
@@ -92,8 +81,9 @@ bottom: 0;
 }
 
 .menu__text1--active{
-  width: rem(500px);
+  width: rem(470px);
   height: 100%;
   display: block;
-
+  float: left;
+  background: rgba(0,0,0,0.8);
 }

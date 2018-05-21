@@ -24,7 +24,8 @@
 }
 
 .row__textarea{
-  height: 30%;
+  
+  height: 35%;
    border: 3px solid transparent;
   border-radius:rem(5px);
   padding:rem(8px) rem(20px);
@@ -147,6 +148,7 @@ white-space: nowrap;
 }
 
 .radio__fake{
+  margin-right: rem(10px);
   width: rem(16px);
   height: rem(16px);
   border-radius: 50%;
@@ -155,25 +157,26 @@ white-space: nowrap;
   &:after{
     content: "";
     position: absolute;
-    width: rem(0px);
-    height: rem(0px);
+    width: 5px;
+    height: 5px;
     display: block;
     border-radius: 50%;
-    background: red;
+    background: #e35028;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: width 3s, height 3s;
+    
 
   }
 }
 
-.radio__form:checked +.radio__fake:after{
-        width: rem(8px);
-      height: rem(8px);
+.form__btm .radio__chek:checked + .radio__fake:after{
+        width: 7px;
+      height: 7px;
+      background: #e35028;
     }
 
-.radio__fake--border{
+    .form__btm--checkbox .radio__fake--border{
     border-radius: 0%;
  }
 
@@ -183,6 +186,23 @@ white-space: nowrap;
       background: transparent;
     }
   }
+}
+
+.form__btm--checkbox .radio__chek:checked + .radio__fake:after{
+background: url(../../img/icon/cheked.png);
+ background-size: contain;
+ width: 11px;
+ height: 11px;
+ background-repeat: no-repeat;
+}
+
+.radio__btm{
+  display: flex;
+}
+
+
+.form__btm--checkbox{
+  margin-top: 4%;
 }
 
 
