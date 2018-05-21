@@ -857,7 +857,7 @@ ul {
   background: transparent; }
 
 .form__btm--checkbox .radio__chek:checked + .radio__fake:after {
-  background: url(../../img/icon/cheked.png);
+  background: url("../img/icon/cheked.png");
   background-size: contain;
   width: 11px;
   height: 11px;
