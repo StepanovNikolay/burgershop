@@ -51,7 +51,7 @@ min-height:rem(650px);
     margin: rem(12px);
     padding-top:rem(10px);
   }
-   &.com__text--activ {
+   &.com__text--active {
      color:$yellow;
      
    }
@@ -67,7 +67,7 @@ min-height:rem(650px);
 
 
 
-.comm__content--activ{
+.comm__content--active{
   height: 100px;
   @include tablets{
     height: 100%;
