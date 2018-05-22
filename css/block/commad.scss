@@ -51,8 +51,7 @@ min-height:rem(650px);
     margin: rem(12px);
     padding-top:rem(10px);
   }
-   &.com__text--active {
-     color:$yellow;
+
      
    }
  @include phones {
@@ -62,8 +61,9 @@ min-height:rem(650px);
   font-size: rem(25px);
 }
    
+.com__name--active {
+  color:$yellow;
 }
-
 
 
 
