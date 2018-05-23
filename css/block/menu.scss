@@ -47,22 +47,31 @@ min-height: rem(650px);
   height: 100%;
   display: block;
   position: relative;
+
 }
  
 
 
 .fon__burger{
 height: 100%;
-
-
+cursor: pointer;
+transition: 0.3s;
+:active + .menu__text1{
+  width: 550px;
+  height: 100%;
+  @include tablets{
+    width: 400px;
+    height: 100%;
+  }
+  @include phones{
+    width: 200px;
+    height: 100%;
+  }
+}
 
 }
 
-.fon__burger--active{
-  width: rem(550px);
 
-
-}
 
 .menu__list{
 position: absolute;
@@ -72,18 +81,14 @@ right: 0;
 bottom: 0;
 }
 .menu__text1{
-  width: rem(0px);
+  width: 0;
   height: 0;
   color: #fff;
   z-index: 1;
   position: relative;
-  display: none;
+  background: rgba(0,0,0,0.8);
+  overflow: hidden;
+transition: 0.3s;
+  
 }
 
-.menu__text1--active{
-  width: rem(470px);
-  height: 100%;
-  display: block;
-  float: left;
-  background: rgba(0,0,0,0.8);
-}

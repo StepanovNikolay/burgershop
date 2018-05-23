@@ -1,0 +1,79 @@
+.mobile__link{
+  @include tablets{
+    display: block;
+  margin-left: 2%;
+  }
+  background: #fff;
+		width: rem(24px);
+		height: rem(5px);
+    border-radius: rem(3px);
+    content: "";
+		display: none;
+    position: relative;
+    cursor: pointer;
+    &::before{
+      background: #fff;
+		width: rem(24px);
+		height: rem(5px);
+    border-radius: rem(3px);
+    content: "";
+		display: block;
+    position: absolute;
+    top: 12px;
+    
+  
+
+    }
+    &:after{
+      background: #fff;
+		width: rem(24px);
+		height: rem(5px);
+    border-radius: rem(3px);
+    content: "";
+		display: block;
+    position: absolute;
+    top: -12px;
+    
+    }
+}
+
+.mobile__content{
+  background: #2f3234;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+
+.nav__list--mobile {
+  line-height: 5.5;
+}
+
+.nav__title--mobile{
+ display: flex;
+ flex-direction: column;
+}
+
+.nav__link--mobile{
+  font-size: 24px;
+
+}
+
+
+.close__mobile{
+  background: url('../../img/icon/xxx.png') center center /cover no-repeat;
+position: absolute;
+top: 0;
+left: 95%;
+width: 20px;
+height: 20px;
+cursor: pointer;
+ }
+

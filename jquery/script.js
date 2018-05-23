@@ -17,3 +17,13 @@ $('.slider__list').slick();
     $('.fon__burger').removeClass('active');
     $(this).addClass('active');
 });
+
+
+
+$('.mobile__link').on('click',function(){
+    $('.mobile__content').fadeIn();
+});
+
+$('.close__mobile').on('click',function(){
+    $('.mobile__content').fadeOut();
+});
