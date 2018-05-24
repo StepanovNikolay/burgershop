@@ -137,6 +137,14 @@
   position: absolute;
   display: flex;
   cursor: pointer;
+ 
+
+  
+  :hover +.component__drop  {
+    opacity: 1;
+    top: 0;
+    
+  }
   @include tablets{
     left: 26%;
   }
@@ -156,18 +164,12 @@
     border-radius: 8px;
     background-color: #f08c33;
     opacity: 0.8;
-
-
-    
+  
      &:hover{
        background-color: #e35028;
      } 
 
-     &:hover +.component__drop  {
-      opacity: 1;
-      top: 0;
-      
-    }
+
     
   }
 
@@ -216,7 +218,7 @@
 
 .component__drop{
   width: rem(270px);
-  height: rem(330px);
+  height: 16.875;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
@@ -227,6 +229,10 @@
   opacity: 0;
   top:-10000px;
   z-index: 1000;
+  padding: 10px;
+  :hover{
+    opacity: 1;
+  }
 
 }
 
@@ -240,4 +246,11 @@
 }
 
 
+.component__tablicon {
+  font-size: 30px;
+}
 
+
+.component__name{
+  padding-right: 30%;
+}

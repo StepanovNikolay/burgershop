@@ -10,8 +10,10 @@
   height: calc(100% / 2);
   filter: grayscale(100%);
   cursor: pointer;
+
   &:hover .rewews__drop{
     opacity: 1;
+    
   }
 @include tablets{
   width: calc(100% / 2);
@@ -103,9 +105,7 @@ background-color: #2f3234;
 border-radius: rem(5px);
 padding: rem(11px) rem(13px);
 font-size: 13px;
-&:hover {
-  color: darken($color: #2f3234, $amount: 10%);
-}
+
 
 }
 

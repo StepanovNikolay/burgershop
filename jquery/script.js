@@ -20,10 +20,23 @@ $('.slider__list').slick();
 
 
 
-$('.mobile__link').on('click',function(){
+$('.mobile__open').on('click',function(){
     $('.mobile__content').fadeIn();
+    
 });
 
 $('.close__mobile').on('click',function(){
     $('.mobile__content').fadeOut();
+});
+
+
+
+$('.rewews__btn').on('click',function(e){
+    e.preventDefault()
+    $('.revews__popup').fadeIn();
+    
+});
+
+$('.popup__close').on('click',function(){
+    $('.revews__popup').fadeOut();
 });

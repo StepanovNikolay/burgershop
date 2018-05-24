@@ -417,8 +417,6 @@ ul {
   border-radius: 0.3125rem;
   padding: 0.6875rem 0.8125rem;
   font-size: 13px; }
-  .rewews__btn:hover {
-    color: #171819; }
 
 .rewews__elem3 {
   margin-top: 1.5625rem;
@@ -481,7 +479,7 @@ ul {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        margin-left: 26%; } }
+        margin-left: 50%; } }
   .nav__list:last-child:after {
     display: none; }
 
@@ -668,7 +666,6 @@ ul {
   top: 78%;
   left: 30%;
   white-space: nowrap;
-  z-index: 1;
   margin: 0 auto; }
 
 .menu__burger--2 {
@@ -716,11 +713,12 @@ ul {
 
 .menu__text1 {
   width: 0;
-  height: 0;
+  height: 100%;
   color: #fff;
   z-index: 1;
   position: relative;
-  background: rgba(0, 0, 0, 0.8);
+  background: #3b3b3a;
+  opacity: 0.9;
   overflow: hidden;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -1129,6 +1127,9 @@ ul {
   display: -ms-flexbox;
   display: flex;
   cursor: pointer; }
+  .component :hover + .component__drop {
+    opacity: 1;
+    top: 0; }
   @media screen and (max-width: 768px) {
     .component {
       left: 26%; } }
@@ -1156,9 +1157,6 @@ ul {
     opacity: 0.8; }
     .component__btn:hover {
       background-color: #e35028; }
-    .component__btn:hover + .component__drop {
-      opacity: 1;
-      top: 0; }
   .component__icon {
     font-size: 2.5rem; }
   .component__text {
@@ -1191,7 +1189,7 @@ ul {
 
 .component__drop {
   width: 16.875rem;
-  height: 20.625rem;
+  height: 16.875;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
@@ -1206,7 +1204,10 @@ ul {
   padding-left: 2%;
   opacity: 0;
   top: -10000px;
-  z-index: 1000; }
+  z-index: 1000;
+  padding: 10px; }
+  .component__drop :hover {
+    opacity: 1; }
 
 .component__table {
   display: -webkit-box;
@@ -1218,6 +1219,12 @@ ul {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start; }
+
+.component__tablicon {
+  font-size: 30px; }
+
+.component__name {
+  padding-right: 30%; }
 
 @font-face {
   font-family: 'icomoon';
@@ -1469,7 +1476,6 @@ ul {
   background-color: transparent;
   color: transparent;
   border: none;
-  z-index: 1000;
   outline: none;
   cursor: pointer; }
 
@@ -1511,7 +1517,7 @@ ul {
     -ms-transform: translate(-50%, -50%) rotate(90deg);
     transform: translate(-50%, -50%) rotate(90deg); }
 
-.mobile__link {
+.mobile__open {
   background: #fff;
   width: 1.5rem;
   height: 0.3125rem;
@@ -1521,10 +1527,10 @@ ul {
   position: relative;
   cursor: pointer; }
   @media screen and (max-width: 768px) {
-    .mobile__link {
+    .mobile__open {
       display: block;
-      margin-left: 2%; } }
-  .mobile__link::before {
+      margin-left: 50%; } }
+  .mobile__open::before {
     background: #fff;
     width: 1.5rem;
     height: 0.3125rem;
@@ -1533,7 +1539,7 @@ ul {
     display: block;
     position: absolute;
     top: 12px; }
-  .mobile__link:after {
+  .mobile__open:after {
     background: #fff;
     width: 1.5rem;
     height: 0.3125rem;
@@ -1553,9 +1559,7 @@ ul {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
+  text-align: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1586,4 +1590,44 @@ ul {
   left: 95%;
   width: 20px;
   height: 20px;
+  cursor: pointer; }
+
+.revews__popup {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(128, 128, 128, 0.9);
+  display: none; }
+
+.popup__content {
+  background: #ffff;
+  width: 460px;
+  height: 260px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 10px; }
+
+.popup__name {
+  font-family: 'Gagalin';
+  font-size: 14px;
+  margin: 21px 0 23px; }
+
+.popup__close {
+  background: url("../../img/icon/closepopup.png") center center/cover no-repeat;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  left: 97%;
   cursor: pointer; }
