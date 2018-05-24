@@ -3,8 +3,18 @@ $(document).ready( function(){
 $('.slider__list').slick();
 
 
+});
 
 
+$('#fullpage').fullpage({
+	
+	menu: '#myMenu'
+});
+
+
+
+$(document).ready(function() {
+	$('#fullpage').fullpage();
 });
 
  $('.command__elem').on('click', function () {

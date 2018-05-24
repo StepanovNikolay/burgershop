@@ -14,8 +14,8 @@
 
 <body>
   <div class="wrapper">
-    <main class="content">
-      <section class="first">
+    <main class="content" id="fullpage" >
+      <section class=" section first" data-anchor="first">
         <div class="container first__container">
           <header class="header">
             <div class="logo">
@@ -27,28 +27,28 @@
               <nav class="nav">
                 <ul class="nav__title">
                   <li class="nav__list">
-                    <a href="#" class="nav__link "> О нас</a>
+                    <a href="#second" class="nav__link "> О нас</a>
                   </li>
                   <li class="nav__list">
-                    <a href="#" class="nav__link"> Бургеры</a>
+                    <a href="#byburger" class="nav__link"> Бургеры</a>
                   </li>
                   <li class="nav__list">
-                    <a href="#" class="nav__link"> Команда</a>
+                    <a href="#command" class="nav__link"> Команда</a>
                   </li>
                   <li class="nav__list">
-                    <a href="#" class="nav__link"> Меню </a>
+                    <a href="#menu_section" class="nav__link"> Меню </a>
                   </li>
                   <li class="nav__list">
-                    <a href="#" class="nav__link"> Отзывы</a>
+                    <a href="#rewews" class="nav__link"> Отзывы</a>
                   </li>
                   <li class="nav__list">
-                    <a href="#" class="nav__link"> Контакты</a>
+                    <a href="#map__section" class="nav__link"> Контакты</a>
                   </li>
                 </ul>
               </nav>
             </div>
             <div class="btm">
-              <a href="#" class="order-link"> Заказать</a>
+              <a href="#orderdelivery" class="order-link"> Заказать</a>
             </div>
              <div class="mobile__link">
                 <div class="mobile__open"></div>
@@ -64,7 +64,7 @@
               <div class="text2">натуральные бургеры</div>
             </div>
             <div class="arrow">
-              <a href="#" class="arrow__link">
+              <a href="#second" class="arrow__link">
                 <img src="./img/logo/arrow-scroll.png" alt="" class="arrow__img">
               </a>
             </div>
@@ -74,7 +74,7 @@
         <!--container first-->
 
       </section>
-      <section class="second">
+      <section class=" section second" data-anchor="second">
         <div class="container second__container">
           <h2 class="text1 text1--second">мы лучшие</h2>
           <div class="second__list">
@@ -112,8 +112,7 @@
         </div>
         <!--container second-->
       </section>
-      <!--second-->
-      <section class="byburger">
+       <section class="section byburger" data-anchor="byburger">
         <div class="container byburger_container">
 
           <div class="slider">
@@ -376,7 +375,7 @@
 
 
       </section>
-      <section class="command">
+      <section class="section command" data-anchor="command">
         <div class="command__menu">
           <div class="comand__bar">
             <h2 class="text1 text1__command">Команда</h2>
@@ -446,7 +445,7 @@
         </div>
         <!--commad-->
       </section>
-      <section class="menu_section">
+      <section class="section menu_section" data-anchor="menu_section">
         <h2 class="text1 text1__menu">меню</h2>
         <ul class="menu__list"   >
           <li class="fon__burger " >
@@ -475,7 +474,7 @@
           </li>
         </ul>
       </section>
-      <section class="rewews">
+      <section class="section rewews" data-anchor="rewews">
         <ul class="rewews__title">
           <li class="rewews__item rewews__item--0">
             <div class="rewews__drop">
@@ -559,7 +558,7 @@
           </li>
         </ul>
       </section>
-      <section class="orderdelivery">
+      <section class=" section orderdelivery" data-anchor="orderdelivery">
         <div class="container">
           <h2 class="text1 text1__over">Закажи доставку</h2>
           <form action="" class="form">
@@ -633,8 +632,7 @@
         </div>
         <!--container form-->
       </section>
-      <!--закажи доставку-->
-      <section class="section map__section ">
+       <section class="section map__section " data-anchor="map__section">
         <div class="map" id="map" ></div>
         <footer class="footer">
           <div class="footer__text">
@@ -693,36 +691,37 @@
     </li>
   </ul>
   </div>
-  <ul class="paginator__title" type="none">
-    <li class="paginator__list paginator__list__activ">
-      <a href="#" class="pag_a"></a>
+  <ul class="paginator__title" type="none" id="myMenu">
+    <li  data-menuanchor="first" class="paginator__list ">
+      <a href="#first" class="pag_a"></a>
     </li>
-    <li class="paginator__list">
-      <a href="#" class="pag_a"> </a>
+    <li   data-menuanchor="second" class="paginator__list">
+      <a href="#second" class="pag_a"> </a>
     </li>
-    <li class="paginator__list">
-      <a href="#" class="pag_a"></a>
+    <li   data-menuanchor="byburger" class="paginator__list">
+      <a href="#byburger" class="pag_a"></a>
     </li>
-    <li class="paginator__list">
-      <a href="#" class="pag_a"></a>
+    <li   data-menuanchor="command" class="paginator__list">
+      <a href="#command" class="pag_a"></a>
     </li>
-    <li class="paginator__list">
-      <a href="#" class="pag_a"></a>
+    <li   data-menuanchor="menu_section" class="paginator__list">
+      <a href="#menu_section" class="pag_a"></a>
     </li>
-    <li class="paginator__list">
-      <a href="#" class="pag_a"></a>
+    <li   data-menuanchor="rewews" class="paginator__list">
+      <a href="#rewews" class="pag_a"></a>
     </li>
-    <li class="paginator__list">
-      <a href="#" class="pag_a"></a>
+    <li   data-menuanchor="orderdelivery" class="paginator__list">
+      <a href="#orderdelivery" class="pag_a"></a>
     </li>
-    <li class="paginator__list">
-      <a href="#" class="pag_a"></a>
+    <li   data-menuanchor="map__section" class="paginator__list">
+      <a href="#map__section" class="pag_a"></a>
     </li>
   </ul>
 
 </body>
 <script src="./jquery/jQuery v3.3.1.js"></script>
 <script src="./jquery/slick.js"></script>
+<script src="./jquery/jquery.fullpage.js"></script>
 <script src="./jquery/map.js"></script>
 <script src="./jquery/script.js"></script>
 

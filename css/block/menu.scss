@@ -54,8 +54,9 @@ min-height: rem(650px);
 .fon__burger{
 height: 100%;
 cursor: pointer;
-transition: 0.3s;
+
 :active + .menu__text1{
+  
   width: 550px;
   height: 100%;
   @include tablets{
@@ -88,7 +89,8 @@ bottom: 0;
   background: #3b3b3a;
   opacity: 0.9;
   overflow: hidden;
-transition: 0.3s;
+
+
   
 }
 
