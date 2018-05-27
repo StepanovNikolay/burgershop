@@ -30,7 +30,7 @@ $(document).ready(function() {
 
 
 
-$('.mobile__open').on('click',function(){
+$('.mobile__link').on('click',function(){
     $('.mobile__content').fadeIn();
     
 });

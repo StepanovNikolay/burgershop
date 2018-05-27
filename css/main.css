@@ -882,6 +882,9 @@ ul {
 .form__btm--checkbox {
   margin-top: 4%; }
 
+.order-link {
+  border: 1px; }
+
 .map__section {
   position: relative;
   width: 100%;
@@ -1011,6 +1014,12 @@ ul {
 
 .byburger_container {
   height: 100%; }
+  @media screen and (max-width: 768px) {
+    .byburger_container {
+      height: 100%; } }
+  @media screen and (max-width: 480px) {
+    .byburger_container {
+      height: 100%; } }
 
 .slider {
   width: 100%;
@@ -1523,7 +1532,8 @@ ul {
   @media screen and (max-width: 768px) {
     .mobile__open {
       display: block;
-      margin-left: 50%; } }
+      position: absolute;
+      top: 45px; } }
   .mobile__open::before {
     background: #fff;
     width: 1.5rem;
@@ -1542,6 +1552,12 @@ ul {
     display: block;
     position: absolute;
     top: -12px; }
+
+.mobile__link {
+  width: 1.875rem;
+  height: 1.875rem;
+  cursor: pointer;
+  margin-left: 2%; }
 
 .mobile__content {
   background: #2f3234;

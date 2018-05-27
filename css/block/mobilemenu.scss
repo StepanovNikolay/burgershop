@@ -1,7 +1,9 @@
 .mobile__open{
   @include tablets{
     display: block;
-  margin-left: 50%;
+   position: absolute;
+   
+   top: 45px;
   }
   background: #fff;
 		width: rem(24px);
@@ -33,6 +35,13 @@
     top: -12px;
     
     }
+}
+
+.mobile__link{
+  width: rem(30px);
+  height: rem(30px);
+  cursor: pointer;
+  margin-left: 2%;
 }
 
 .mobile__content{

@@ -11,6 +11,12 @@
 
 .byburger_container{
   height: 100%;
+  @include tablets{
+    height: 100%;
+  }
+  @include phones{
+    height: 100%;
+  }
   
 }
 

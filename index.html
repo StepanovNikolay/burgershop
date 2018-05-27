@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru_RU">
 
 <head>
   <meta charset="UTF-8">
@@ -204,50 +204,40 @@
                   <div class="component__drop">
                     <table class="component__table">
                       <tr>
-                        <td class="component__icon ">
+                        <td class="component__tablicon ">
                           <i class="icon-beef"></i>
                         </td>
-                        <td class="component__name">Говядина</td>
+                        <td class="component__name ">Говядина</td>
                         <td class="component__weight">300гр</td>
                       </tr>
-                    </table>
-                    <table class="component__table">
                       <tr>
-                        <td class="component__icon">
-                          <i class="icon-beef"></i>
-                        </td>
-                        <td class="component__name">булочки</td>
-                        <td class="component__weight">100гр</td>
+                          <td class="component__tablicon ">
+                            <i class="icon-beef"></i>
+                          </td>
+                          <td class="component__name">булочки</td>
+                          <td class="component__weight">100гр</td>
                       </tr>
-                    </table>
-                    <table class="component__table">
                       <tr>
-                        <td class="component__icon">
+                        <td class="component__tablicon ">
                           <i class="icon-salad"></i>
                         </td>
                         <td class="component__name">зелень</td>
                         <td class="component__weight">70гр</td>
                       </tr>
-                    </table>
-                    <table class="component__table">
                       <tr>
-                        <td class="component__icon">
+                        <td class="component__tablicon ">
                           <i class="icon-sauce"></i>
                         </td>
                         <td class="component__name">соус</td>
                         <td class="component__weight">150гр</td>
                       </tr>
-                    </table>
-                    <table class="component__table">
                       <tr>
-                        <td class="component__icon">
+                        <td class="component__tablicon ">
                           <i class="icon-cucumber"></i>
                         </td>
                         <td class="component__name">овощи</td>
                         <td class="component__weight">200гр</td>
                       </tr>
-                    </table>
-                    <table class="component__table">
                       <tr>
                         <td class="component__icon">
                           <i class="icon-cheese"></i>
@@ -291,50 +281,40 @@
                   <div class="component__drop">
                     <table class="component__table">
                       <tr>
-                        <td class="component__icon ">
+                        <td class="component__tablicon ">
                           <i class="icon-beef"></i>
                         </td>
-                        <td class="component__name">Говядина</td>
+                        <td class="component__name ">Говядина</td>
                         <td class="component__weight">300гр</td>
                       </tr>
-                    </table>
-                    <table class="component__table">
                       <tr>
-                        <td class="component__icon">
-                          <i class="icon-beef"></i>
-                        </td>
-                        <td class="component__name">булочки</td>
-                        <td class="component__weight">100гр</td>
+                          <td class="component__tablicon ">
+                            <i class="icon-beef"></i>
+                          </td>
+                          <td class="component__name">булочки</td>
+                          <td class="component__weight">100гр</td>
                       </tr>
-                    </table>
-                    <table class="component__table">
                       <tr>
-                        <td class="component__icon">
+                        <td class="component__tablicon ">
                           <i class="icon-salad"></i>
                         </td>
                         <td class="component__name">зелень</td>
                         <td class="component__weight">70гр</td>
                       </tr>
-                    </table>
-                    <table class="component__table">
                       <tr>
-                        <td class="component__icon">
+                        <td class="component__tablicon ">
                           <i class="icon-sauce"></i>
                         </td>
                         <td class="component__name">соус</td>
                         <td class="component__weight">150гр</td>
                       </tr>
-                    </table>
-                    <table class="component__table">
                       <tr>
-                        <td class="component__icon">
+                        <td class="component__tablicon ">
                           <i class="icon-cucumber"></i>
                         </td>
                         <td class="component__name">овощи</td>
                         <td class="component__weight">200гр</td>
                       </tr>
-                    </table>
-                    <table class="component__table">
                       <tr>
                         <td class="component__icon">
                           <i class="icon-cheese"></i>
@@ -561,70 +541,70 @@
       <section class=" section orderdelivery" data-anchor="orderdelivery">
         <div class="container">
           <h2 class="text1 text1__over">Закажи доставку</h2>
-          <form action="" class="form">
+          <form action="server.php" metod="post" class="form" id="order-form">
             <div class="form__mine">
               <div class="form__row">
-                <label for="" class="form__block">
-                  <div class="form__title">Имя</div>
-                  <input type="text" class="form__input">
+                <label for="user-name" class="form__block">
+                  <div   class="form__title">Имя</div>
+                  <input id="user-name"  name="user-name" type="text" class="form__input">
                 </label>
-                <label for="" class="form__block">
-                  <div class="form__title">Телефон</div>
-                  <input type="text" class="form__input">
-                </label>
-              </div>
-              <div class="form__row">
-                <label for="" class="form__block">
-                  <div class="form__title">Улица</div>
-                  <input type="text" class="form__input">
+                <label for="user-phone" class="form__block">
+                  <div  class="form__title">Телефон</div>
+                  <input  id="user-phone" name=user-phone"" type="text" class="form__input">
                 </label>
               </div>
               <div class="form__row">
-                <label for="" class="form__block">
-                  <div class="form__title">Дом</div>
-                  <input type="text" class="form__input">
+                <label for="user-adres" class="form__block">
+                  <div  class="form__title">Улица</div>
+                  <input id="user-adres" name="user-adres" type="text" class="form__input">
                 </label>
-                <label for="" class="form__block">
-                  <div class="form__title">Корпус</div>
-                  <input type="text" class="form__input">
+              </div>
+              <div class="form__row">
+                <label for="user-home" class="form__block">
+                  <div  class="form__title">Дом</div>
+                  <input id="user-home" name="user-home" type="text" class="form__input">
                 </label>
-                <label for="" class="form__block">
-                  <div class="form__title">Квартира</div>
-                  <input type="text" class="form__input">
+                <label for="user-fraction" class="form__block">
+                  <div  class="form__title">Корпус</div>
+                  <input  id="user-fraction" name="user-fraction" type="text" class="form__input">
                 </label>
-                <label for="" class="form__block">
-                  <div class="form__title">Этаж</div>
-                  <input type="text" class="form__input">
+                <label id="user-apartment" class="form__block">
+                  <div  for="user-apartment" class="form__title">Квартира</div>
+                  <input  name="user-apartment"  type="text" class="form__input">
+                </label>
+                <label for="user-floor" class="form__block">
+                  <div  class="form__title">Этаж</div>
+                  <input id="user-floor" name="user-floor"  type="text" class="form__input">
                 </label>
               </div>
             </div>
 
             <div class="form__textarea">
-              <label  class="form__block2">
-                <div class="form__title form__title--margin">Комментарий</div>
-                <textarea name="textarea" id="" cols="30" rows="10" class="row__textarea"></textarea>
+              <label for="user-comment"  class="form__block2">
+                <div  class="form__title form__title--margin">Комментарий</div>
+                <textarea name="user-comment" id="user-comment" cols="30" rows="10" class="row__textarea"></textarea>
               </label>
               <div class="form__radio">
                 <div class="radio__btm">
-                <label  class="form__btm">
-                  <input type="radio" class="radio__chek" name="payment" type="radio" checked>
-                  <div class="radio__fake"></div>
-                  <div class="radio__text"> Потребуется сдача</div>
+                <label   class="form__btm">
+                  <input type="radio" class="radio__chek" id="user-surender" name="user-surender" type="radio" value="1" checked>
+                  <div   class="radio__fake"></div>
+                  <div   class="radio__text"> Потребуется сдача</div>
                 </label>
                 <label  class="form__btm">
-                  <input type="radio" class="radio__chek" name="payment" type="radio">
+                  <input type="radio" class="radio__chek" id="pay-card"  name="pay-card" type="radio" value="1" >
                   <div class="radio__fake"></div>
-                  <div class="radio__text">Оплата по карте</div>
+                  <div  class="radio__text">Оплата по карте</div>
                 </label>
               </div>
-                <label class="form__btm form__btm--checkbox">
-                  <input type="radio" class="radio__chek" type="checkbox">
+                <label  class="form__btm form__btm--checkbox">
+                  <input type="radio" class="radio__chek" id="dont-disturb"  name="dont-disturb" type="checkbox" value="1">
                   <div class="radio__fake radio__fake--border"></div>
-                  <div class="radio__text">Не перезванивать</div>
+                  <div  class="radio__text">Не перезванивать</div>
                 </label>
               </div>
               <div class="btm">
-                <a href="#" class="order-link"> Заказать</a>
+                <button  type="submit" class="order-link"> Заказать</button>
                 <a href="#" class="new__link">Очистить</a>
               </div>
             </div>
@@ -723,6 +703,7 @@
 <script src="./jquery/slick.js"></script>
 <script src="./jquery/jquery.fullpage.js"></script>
 <script src="./jquery/map.js"></script>
+<script src="./jquery/sendmail.js"></script>
 <script src="./jquery/script.js"></script>
 
 </html>
