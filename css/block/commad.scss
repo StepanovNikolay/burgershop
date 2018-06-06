@@ -55,7 +55,7 @@ min-height:rem(650px);
      }
    
   }
-  &:hover{
+  &:active{
     color:$yellow;
   }
   @include phones {
@@ -71,7 +71,7 @@ min-height:rem(650px);
 
 
 .command__elem{
-  :active + .comm__content{
+  &.active .comm__content{
     height: 100px;
     @include tablets{
       height: 180px;
@@ -117,7 +117,7 @@ min-height:rem(650px);
   overflow: hidden;
   height:0 ;
   transition: 0.5s;
-  &:active{
+  :active{
     height: 100px;
   }
   @include tablets{
@@ -137,3 +137,7 @@ min-height:rem(650px);
   }
 }
 
+.none__text{
+  overflow: hidden;
+  width: 0;
+}

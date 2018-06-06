@@ -15,6 +15,7 @@ min-height: rem(650px);
   color: #fff;
   left: rem(100px);
   position: absolute;
+  transition: 0.3s;
 }
 
 .menu__text{
@@ -54,10 +55,10 @@ min-height: rem(650px);
 .fon__burger{
 height: 100%;
 cursor: pointer;
-
-:active + .menu__text1{
+ 
+&.active .menu__text1{
   
-  width: 550px;
+ width: 550px;
   height: 100%;
   @include tablets{
     width: 400px;
@@ -89,7 +90,7 @@ bottom: 0;
   background: #3b3b3a;
   opacity: 0.9;
   overflow: hidden;
-
+  transition: 0.5s;
 
   
 }

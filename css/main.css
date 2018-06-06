@@ -282,7 +282,7 @@ ul {
       text-align: left; } }
 
 .second__container {
-  width: 100%;
+  width: 95%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -578,7 +578,7 @@ ul {
       -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
       transform: rotate(180deg); }
-  .com__text:hover {
+  .com__text:active {
     color: #f8b43a; }
   @media screen and (max-width: 480px) {
     .com__text {
@@ -587,10 +587,10 @@ ul {
     .com__text {
       font-size: 1.5625rem; } }
 
-.command__elem :active + .comm__content {
+.command__elem.active .comm__content {
   height: 100px; }
   @media screen and (max-width: 768px) {
-    .command__elem :active + .comm__content {
+    .command__elem.active .comm__content {
       height: 180px; } }
 
 .img_com {
@@ -623,7 +623,7 @@ ul {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
-  .comm__content:active {
+  .comm__content :active {
     height: 100px; }
   @media screen and (max-width: 768px) {
     .comm__content {
@@ -640,6 +640,10 @@ ul {
   .text1__command {
     text-align: center; } }
 
+.none__text {
+  overflow: hidden;
+  width: 0; }
+
 .menu_section {
   background-image: url("../img/bg/big-burger.jpg");
   background-position: 50% center;
@@ -653,7 +657,10 @@ ul {
 .text1__menu {
   color: #fff;
   left: 6.25rem;
-  position: absolute; }
+  position: absolute;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
 
 .menu__text {
   font-family: 'Gagalin';
@@ -687,15 +694,15 @@ ul {
 .fon__burger {
   height: 100%;
   cursor: pointer; }
-  .fon__burger :active + .menu__text1 {
+  .fon__burger.active .menu__text1 {
     width: 550px;
     height: 100%; }
     @media screen and (max-width: 768px) {
-      .fon__burger :active + .menu__text1 {
+      .fon__burger.active .menu__text1 {
         width: 400px;
         height: 100%; } }
     @media screen and (max-width: 480px) {
-      .fon__burger :active + .menu__text1 {
+      .fon__burger.active .menu__text1 {
         width: 200px;
         height: 100%; } }
 
@@ -716,7 +723,10 @@ ul {
   position: relative;
   background: #3b3b3a;
   opacity: 0.9;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
 
 .orderdelivery {
   background-image: url("../img/bg/Rectangle 6.jpg");
@@ -903,7 +913,7 @@ ul {
   height: 2.5rem;
   width: 100%;
   position: absolute;
-  top: 94%;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1016,10 +1026,10 @@ ul {
   height: 100%; }
   @media screen and (max-width: 768px) {
     .byburger_container {
-      height: 100%; } }
+      height: 80%; } }
   @media screen and (max-width: 480px) {
     .byburger_container {
-      height: 100%; } }
+      height: 75%; } }
 
 .slider {
   width: 100%;
@@ -1130,9 +1140,10 @@ ul {
   display: -ms-flexbox;
   display: flex;
   cursor: pointer; }
-  .component :hover + .component__drop {
+  .component:hover > .component__drop {
     opacity: 1;
-    top: 0; }
+    top: 0;
+    left: 5.625rem; }
   @media screen and (max-width: 768px) {
     .component {
       left: 26%; } }
@@ -1189,6 +1200,12 @@ ul {
   font-family: 'Gagalin';
   font-size: 0.9375rem;
   color: #fff; }
+
+.component__weight {
+  padding-left: 26%; }
+  @media screen and (max-width: 768px) {
+    .component__weight {
+      padding-left: 0%; } }
 
 .component__drop {
   width: 16.875rem;
@@ -1487,7 +1504,8 @@ ul {
   left: 100%; }
   @media screen and (max-width: 768px) {
     .slick-next {
-      left: 97%; } }
+      left: 97%;
+      display: none; } }
   .slick-next:after {
     content: "\e900";
     color: #fff;
@@ -1501,13 +1519,13 @@ ul {
     transform: translate(-50%, -50%) rotate(-90deg); }
     @media screen and (max-width: 768px) {
       .slick-next:after {
-        left: 97%; } }
+        display: none; } }
 
 .slick-prev {
   right: 100%; }
   @media screen and (max-width: 768px) {
     .slick-prev {
-      right: 97%; } }
+      display: none; } }
   .slick-prev:after {
     content: "\e900";
     color: #fff;
@@ -1519,6 +1537,9 @@ ul {
     -webkit-transform: translate(-50%, -50%) rotate(90deg);
     -ms-transform: translate(-50%, -50%) rotate(90deg);
     transform: translate(-50%, -50%) rotate(90deg); }
+    @media screen and (max-width: 768px) {
+      .slick-prev:after {
+        display: none; } }
 
 .mobile__open {
   background: #fff;
