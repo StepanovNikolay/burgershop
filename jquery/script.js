@@ -13,15 +13,19 @@ $('#fullpage').fullpage({
 
 
 
-$(document).ready(function() {
-	$('#fullpage').fullpage();
-});
+
 
  $('.command__elem').on('click', function () {
        $('.command__elem').removeClass('active');
        $(this).addClass('active');
    });
 
+   $('.com__text').on('click', function () {
+    $('.com__text').removeClass('active');
+    $(this).addClass('active');
+});
+
+   
 
    $('.fon__burger').on('click', function () {
     $('.fon__burger').removeClass('active');
@@ -50,3 +54,28 @@ $('.rewews__btn').on('click',function(e){
 $('.popup__close').on('click',function(){
     $('.revews__popup').fadeOut();
 });
+
+$('.command__elem').each(function(){
+    var $dropdown = $(this);
+
+
+  
+$(document).on("click", function(event){
+    if($dropdown !== event.target && !$dropdown.has(event.target).length){
+        $dropdown.removeClass('active');
+    }
+    });      
+    
+});      
+
+$('.fon__burger').each(function(){
+    var $dropdown = $(this);
+
+
+  
+$(document).on("click", function(event){
+    if($dropdown !== event.target && !$dropdown.has(event.target).length){
+        $dropdown.removeClass('active');
+    }
+    });      
+});  

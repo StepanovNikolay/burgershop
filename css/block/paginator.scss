@@ -31,7 +31,7 @@ transform: translate(-50%, -50%);
   border-radius: rem(10px);
   width: rem(16px);
   height: rem(16px);
-  &:active{
+  &.active{
     border: 1px solid #fff ;
   }
    

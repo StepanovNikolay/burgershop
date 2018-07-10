@@ -85,8 +85,14 @@
 
 
 .new__link{
+  outline: none;
   text-decoration: none;
+  text-decoration: none;
+  margin-left: 0.9375rem;
+  border: none;
+  background: transparent;
   color: #fff;
+  cursor: pointer;
   margin-left: rem(15px);
 }
 
