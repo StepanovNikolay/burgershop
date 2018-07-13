@@ -222,12 +222,6 @@
 }
 
 
-.component__weight{
-  padding-left: 26%;
-  @include tablets{
-    padding-left: 0%;
-  }
-}
 
 .component__drop{
   width: rem(270px);

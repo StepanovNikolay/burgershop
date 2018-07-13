@@ -82,4 +82,15 @@ $(document).on("click", function(event){
 });  
 
 
+$('.com__text').each(function(){
+    var $dropdown = $(this);
+
+
+  
+$(document).on("mouseup", function(event){
+    if($dropdown !== event.target && !$dropdown.has(event.target).length){
+        $dropdown.removeClass('com__text--yellow');
+    }
+    });      
+});  
 

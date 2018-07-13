@@ -1233,12 +1233,6 @@ ul {
   font-size: 0.9375rem;
   color: #fff; }
 
-.component__weight {
-  padding-left: 26%; }
-  @media screen and (max-width: 768px) {
-    .component__weight {
-      padding-left: 0%; } }
-
 .component__drop {
   width: 16.875rem;
   height: 16.875;
