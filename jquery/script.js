@@ -14,15 +14,16 @@ $('#fullpage').fullpage({
 
 
 
-
  $('.command__elem').on('click', function () {
        $('.command__elem').removeClass('active');
        $(this).addClass('active');
+    
    });
 
    $('.com__text').on('click', function () {
-    $('.com__text').removeClass('active');
-    $(this).addClass('active');
+    $('.com__text').removeClass('com__text--yellow');
+    $(this).addClass('com__text--yellow');
+    
 });
 
    
@@ -79,3 +80,6 @@ $(document).on("click", function(event){
     }
     });      
 });  
+
+
+
