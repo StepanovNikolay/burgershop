@@ -261,3 +261,13 @@
 .component__name{
   padding-right: 30%;
 }
+
+.component__weight{
+  padding-left: 80px;
+  @include tablets {
+    padding-left: 70px;
+  }
+  @include phones {
+    padding-left: 60px;
+  }
+}

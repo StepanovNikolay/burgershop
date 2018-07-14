@@ -17,14 +17,15 @@ $('#fullpage').fullpage({
  $('.command__elem').on('click', function () {
        $('.command__elem').removeClass('active');
        $(this).addClass('active');
+       $(this).find('.com__text').addClass('com__text--yellow');
     
    });
 
-   $('.com__text').on('click', function () {
-    $('.com__text').removeClass('com__text--yellow');
-    $(this).addClass('com__text--yellow');
+//    $('.com__text').on('click', function () {
+//     $('.com__text').removeClass('com__text--yellow');
+//     $(this).addClass('com__text--yellow');
     
-});
+// });
 
    
 

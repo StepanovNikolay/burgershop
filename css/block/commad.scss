@@ -47,11 +47,12 @@ min-height:rem(650px);
     vertical-align:middle;
     content: "";
     width: 0; height: 0;
-    border-left:rem(6px) solid transparent;
-    border-right: rem(6px) solid transparent;
-    border-top: rem(6px) solid $yellow;
+    border-left:rem(8px) solid transparent;
+    border-right: rem(8px) solid transparent;
+    border-top: rem(8px) solid $yellow;
     margin: rem(12px);
     padding-top:rem(10px);
+     transition: 0.5s;
 
   }
   
@@ -71,20 +72,21 @@ min-height:rem(650px);
     cursor: pointer;
     color: $yellow;
     &:before{
-      position: relative;
       display: inline-block;
       margin-right: 2%;
       vertical-align:middle;
       content: "";
       width: 0; height: 0;
-      border-left:rem(6px) solid transparent;
-      border-right: rem(6px) solid transparent;
-      border-top: rem(6px) solid $yellow;
+      border-left:rem(8px) solid transparent;
+      border-right: rem(8px) solid transparent;
+      border-top: rem(8px) solid $yellow;
       margin: rem(12px);
       padding-top:rem(10px);
       transform: rotate(-180deg);
-      transition: 0.3s;
-  
+      transition: 0.5s;
+      position: relative;
+      
+ 
     }
     
     @include phones {
