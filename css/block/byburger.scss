@@ -259,7 +259,9 @@
 
 
 .component__name{
-  padding-right: 30%;
+ &:last-child{
+   padding-right: 9%;
+ }
 }
 
 tbody{

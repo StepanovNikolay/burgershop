@@ -1272,8 +1272,8 @@ ul {
 .component__tablicon {
   font-size: 30px; }
 
-.component__name {
-  padding-right: 30%; }
+.component__name:last-child {
+  padding-right: 9%; }
 
 tbody {
   width: 100%; }
