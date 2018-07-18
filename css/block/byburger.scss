@@ -262,3 +262,12 @@
   padding-right: 30%;
 }
 
+tbody{
+  width: 100%;
+}
+
+tr{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
